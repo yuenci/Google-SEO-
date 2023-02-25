@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/33682384/209968467-d775f977-b922-445c-bdae-36b50f235926.png)
 
-> A mini crawler system and CSR, SSR, Pre-Render system to introduce the impact of different website frameworks on SEO
+> A mini crawler system and CSR, SSR, SSG(Pre-Render) system to introduce the impact of different rendering patterns on SEO
 
 ### Adjustments and improvements
 
@@ -14,6 +14,14 @@ The project is still under development and the next updates will be focused on t
 - [x] Task 3
 - [ ] Task 4
 - [ ] Task 5
+
+## 💡 Introduction
+#### Introducing the three stages of Google Search[1]
+Google Search works in three stages, and not all pages make it through each stage:
+* Crawling: Google downloads text, images, and videos from pages it found on the internet with automated programs called crawlers.
+* Indexing: Google analyzes the text, images, and video files on the page, and stores the information in the Google index, which is a large database.
+* Serving search results: When a user searches on Google, Google returns information that's relevant to the user's query.
+
 
 ## 💻 Prerequisites
 
@@ -73,5 +81,7 @@ Want to be part of this project? Click HERE and read how to contribute.
 This project is under license. See the [LICENSE](./LICENSE) file for more details.
 
 <p >(<a href="#readme-top">⬆ Back to top</a>)</p>
+
+[1]: https://developers.google.com/search/docs/fundamentals/how-search-works
 
 
