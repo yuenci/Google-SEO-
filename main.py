@@ -19,12 +19,12 @@ def get_lastest_articles():
     return res
 
 
-@app.post("/index")
-async def makeIndex(item: dict):
-    url = item.get("url")
-    print(url)
-    Index(url).makeIndex()
-    return {"result": "success"}
+# @app.post("/index")
+# async def makeIndex(item: dict):
+#     url = item.get("url")
+#     print(url)
+#     Index(url).makeIndex()
+#     return {"result": "success"}
 
 
 @app.get("/search")

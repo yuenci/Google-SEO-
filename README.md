@@ -1,5 +1,6 @@
 # Google SEO And Web frameworks
-<a name="readme-top"></a>
+
+`<a name="readme-top"></a>`
 
 ![image](https://user-images.githubusercontent.com/33682384/209968467-d775f977-b922-445c-bdae-36b50f235926.png)
 
@@ -9,32 +10,40 @@
 
 The project is still under development and the next updates will be focused on the following tasks:
 
-- [x] Task 1
-- [x] Task 2
-- [x] Task 3
+- [X] Task 1
+- [X] Task 2
+- [X] Task 3
 - [ ] Task 4
 - [ ] Task 5
 
 ## 💡 Introduction
+
 #### Introducing the three stages of Google Search[^1]
+
 Google Search works in three stages, and not all pages make it through each stage:
+
 * Crawling: Google downloads text, images, and videos from pages it found on the internet with automated programs called crawlers.
 * Indexing: Google analyzes the text, images, and video files on the page, and stores the information in the Google index, which is a large database.
 * Serving search results: When a user searches on Google, Google returns information that's relevant to the user's query.
 
-
 ## 💻 Prerequisites
 
 Before you begin, make sure that you have met the following requirements:
+
 <!---These are just example requirements. Add, duplicate or remove as needed--->
-*	You have installed the latest version of <language/dependency/required>
-*	You have a machine <Windows /Linux/Mac>. Indicate which operating system is compatible/not compatible.
-*	You have <guide /link/documentação_relacionada_ao_projeto>.
 
+* You have installed the latest version of <language/dependency/required>
+* You have a machine <Windows /Linux/Mac>. Indicate which operating system is compatible/not compatible.
+* You have <guide /link/documentação_relacionada_ao_projeto>.
 
-## 🚀 Installing 
+python
+
+## 🚀 Installing
 
 To install this project, follow these steps:
+
+1. 安装requestments
+2. 
 
 ```bash
 $ 
@@ -43,25 +52,25 @@ $
 ## ☕ Usecase
 
 To use this project, follow these steps:
-```
-//command
-```
 
-Add execution commands and examples that you think users will find useful. Provides a reference ofoptions for bonus points!
+1. Run main.py for articles api and crawler
+2. Run manage.py for django server
+   1. vscode switch to pipenv then new a terminal
+   2. `cd 5.blog-SSR `
+   3. `python manage.py runserver`
+   4. `http://127.0.0.1:8000/blog/index/`
 
 ## 📫 Contributing
 
 To contribute this project, follow these steps:
 
-1.	Fork this repository.
-2.	Crie um branch: `git checkout -b <some_branch>`
-3.	Make your changes and confirm them: `git commit -m <message_commit>`
-4.	Push to the original branch: `git push origin <peoject_name> / <local>`
-5.	Create the pull request.
+1. Fork this repository.
+2. Crie um branch: `git checkout -b <some_branch>`
+3. Make your changes and confirm them: `git commit -m <message_commit>`
+4. Push to the original branch: `git push origin <peoject_name> / <local>`
+5. Create the pull request.
 
 Alternatively, see the GitHub documentation on how to [create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-
 
 ## 🤝 Collaborations
 
@@ -70,7 +79,6 @@ Alternatively, see the GitHub documentation on how to [create a pull request](ht
 </a>
 
 Innis - [EnjoyCode.me](https://www.enjoycoding.me/) - yuenci1575270674@gmail.com
-
 
 ## 😄 Be one of the contributors
 
@@ -85,5 +93,3 @@ This project is under license. See the [LICENSE](./LICENSE) file for more detail
 ## 📚 Materials
 
 [^1]: https://developers.google.com/search/docs/fundamentals/how-search-works
-
-

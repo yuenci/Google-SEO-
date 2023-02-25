@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //     "Google",
     //     "Google is a search engine"
     // )
+    let search_input = localStorage.getItem("search");
+    document.getElementById("search-input").value = search_input;
+    sendQuery(search_input);
     AddInputListener();
 });
 

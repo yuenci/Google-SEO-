@@ -25,6 +25,8 @@ function addInputEvent() {
         if (event.key === "Enter") {
             event.preventDefault();
             //console.log("enter key pressed:", input.value);
+            localStorage.setItem("search", input.value);
+            window.location.href = "./search.html";
         }
     });
 }
