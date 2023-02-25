@@ -60,6 +60,13 @@ main {
     margin-top: 120px;
 }
 
+#hello-text-phone {
+    font-size: 48px;
+    color: rgba(0, 0, 0, .7);
+    margin-top: 120px;
+    display: none;
+}
+
 #hello-text__sub {
     font-size: 32px;
     color: #95a5a6;
@@ -134,6 +141,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .article {
