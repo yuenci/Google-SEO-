@@ -1,6 +1,6 @@
 # Google SEO And Web frameworks
 
-`<a name="readme-top"></a>`
+<a name="readme-top"></a>
 
 ![image](image/product-image.png)
 
@@ -32,9 +32,11 @@ python
 To install this project, follow these steps:
 
 1. Install requirements.txt
-   ```bash
-   pip install -r requirements.txt
-   ```
+
+```bash
+pip install -r requirements.txt
+```
+   
 2. Install pipenv
 
 ```bash
