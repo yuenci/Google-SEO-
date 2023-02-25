@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/33682384/209968467-d775f977-b922-445c-bdae-36b50f235926.png)
 
-> A mini crawler system and CSR, SSR, SSG(Pre-Render), ISR system to introduce the impact of different rendering patterns on SEO
+> A mini crawler system and CSR, SSR, SSG(Pre-Render)system to introduce the impact of different rendering patterns on SEO
 
 ### Adjustments and improvements
 
