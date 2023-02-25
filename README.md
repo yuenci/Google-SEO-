@@ -2,19 +2,9 @@
 
 `<a name="readme-top"></a>`
 
-![image](https://user-images.githubusercontent.com/33682384/209968467-d775f977-b922-445c-bdae-36b50f235926.png)
+![image](image/product-image.png)
 
 > A mini crawler system and CSR, SSR, SSG(Pre-Render)system to introduce the impact of different rendering patterns on SEO
-
-### Adjustments and improvements
-
-The project is still under development and the next updates will be focused on the following tasks:
-
-- [X] Task 1
-- [X] Task 2
-- [X] Task 3
-- [ ] Task 4
-- [ ] Task 5
 
 ## 💡 Introduction
 
@@ -32,9 +22,8 @@ Before you begin, make sure that you have met the following requirements:
 
 <!---These are just example requirements. Add, duplicate or remove as needed--->
 
-* You have installed the latest version of <language/dependency/required>
+* You have installed python 3.8 / 3.9 / 3.10
 * You have a machine <Windows /Linux/Mac>. Indicate which operating system is compatible/not compatible.
-* You have <guide /link/documentação_relacionada_ao_projeto>.
 
 python
 
@@ -42,19 +31,23 @@ python
 
 To install this project, follow these steps:
 
-1. 安装requestments
-2. 
+1. Install requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Install pipenv
 
 ```bash
-$ 
+$ pip install pipenv
 ```
 
 ## ☕ Usecase
 
 To use this project, follow these steps:
 
-1. Run main.py for articles api and crawler
-2. Run manage.py for django server
+1. Run `main.py` for articles api
+2. Run `crawler.py` for crawler
+3. Run manage.py for django server
    1. vscode switch to pipenv then new a terminal
    2. `cd 5.blog-SSR `
    3. `python manage.py runserver`
