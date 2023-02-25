@@ -7,9 +7,28 @@ document.addEventListener("DOMContentLoaded", function () {
         "Google",
         "Google is a search engine"
     )
+    AddInputListener();
 });
 
+function AddInputListener() {
+    const input = document.getElementById("search-input");
+    // enter key
+    input.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            sendQuery(input.value)
+        }
+    });
+}
 
+function sendQuery(keyword) {
+    console.log("sendQuery");
+    fetch(`http://127.0.0.1:5000/search?q=${keyword}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        });
+}
 
 
 function AddNewResult(logoUrl, website, url, title, description) {

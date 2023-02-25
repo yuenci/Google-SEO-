@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from API.ReadArticles import get_articles
+from API.Index import Index
 import uvicorn
 
 app = FastAPI()
@@ -16,6 +17,20 @@ def get_lastest_articles():
         res[i] = {"title": articles[i][0], "content": articles[i][1]}
 
     return res
+
+
+@app.post("/index")
+async def makeIndex(item: dict):
+    url = item.get("url")
+    print(url)
+    Index(url).makeIndex()
+    return {"result": "success"}
+
+
+@app.get("/search")
+async def search(q: str):
+    print(q)
+    return {"result": "success"}
 
 
 if __name__ == "__main__":
