@@ -1,4 +1,4 @@
-# Google SEO And Web frameworks
+# Google SEO And Rendering-Patterns
 
 <a name="readme-top"></a>
 
