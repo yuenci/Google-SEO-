@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TZU's Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="header__name">@TZU （*＾-＾*）</div>
+            <div id="header__about">About me</div>
+            <div id="header__blog">Blog</div>
+        </header>
+        <div class="divider"></div>
+        <main>
+            <div id="main-hello">
+                <div id="hello-text">👋 Hello. I'm TZU</div>
+                <div id="hello-text__sub">Welcome to my page.</div>
+                <div id="main-about-title">About me</div>
+            </div>
+            <div id="main-about">
+                <div class="main-about-line">
+                    I am a backend developer with Java. I am currently working at a company in Thailand. I am interested
+                    in
+                    (￣o￣) . z Z, and I am currently learning Django.
+                </div>
+                <div class="main-about-line">
+                    I sporadically write articles in my blog about my journey as a software developer, some creative
+                    writing and the
+                    occasional rant.
+                </div>
+                <div class="main-about-line">
+                    I live in Malaysia with my family.
+                </div>
+            </div>
+            <hr>
+            <div id="main-rencent">
+                <div>My Recent Articles</div>
+                <div class="main-article-line1">
+                    <div class="article">
+                        <div class="article-title">Best Practices for Exception Handling in Java</div>
+                        <div class="article-content">Exception handling is a crucial aspect of writing reliable and
+                            maintainable Java code. When an unexpected error occurs,
+                            throwing and catching exceptions can help prevent application crashes and provide valuable
+                            information for debugging.
+                            Here are some best practices for exception handling in Java.
+
+                            1. Use specific exception classes: Instead of catching general exceptions like Exception or
+                            RuntimeException, catch
+                            specific exceptions that accurately describe the problem. This allows for more targeted
+                            error handling and better
+                            logging.
+                            2. Handle exceptions gracefully: When an exception is caught, handle it gracefully by
+                            providing meaningful error
+                            messages, logging the error, and possibly retrying the operation.
+                            3. Use try-with-resources: When working with resources like files, streams, or database
+                            connections, use
+                            try-with-resources statements to automatically close them after use, even if an exception
+                            occurs.
+                            4. Log exceptions: Logging exceptions is crucial for debugging and diagnosing issues in
+                            production. Use a logging
+                            framework like Log4j or Java Util Logging to log exceptions along with contextual
+                            information like the current thread,
+                            user, and timestamp.
+                            5. Use checked exceptions sparingly: Checked exceptions can lead to boilerplate code and
+                            obscure the main logic of your
+                            application. Use them sparingly and only when you expect the caller to handle the exception.
+
+                            By following these best practices, you can write more robust and maintainable Java code that
+                            handles errors gracefully
+                            and prevents application crashes.</div>
+                    </div>
+                    <div class="article">
+                        <div class="article-title">Introduction to Java Streams</div>
+                        <div class="article-content">Java Streams are a powerful feature introduced in Java 8 that
+                            allows developers to process collections of data in a
+                            functional style. Streams provide a declarative and concise way of expressing data
+                            processing pipelines, making it
+                            easier to write efficient and maintainable code.
+
+                            A Stream is a sequence of elements that can be processed in parallel or sequentially.
+                            Streams can be created from
+                            collections, arrays, or I/O operations. Once a stream is created, you can use various
+                            intermediate and terminal
+                            operations to transform, filter, or aggregate the elements in the stream.
+
+                            Intermediate operations are operations that transform a stream into another stream. Examples
+                            include map, filter, and
+                            flatMap. Terminal operations are operations that produce a result or a side effect. Examples
+                            include forEach, reduce,
+                            and collect.
+
+                            Streams are designed to be lazy, meaning that intermediate operations do not execute until a
+                            terminal operation is
+                            called. This allows for efficient processing of large collections of data, as only the
+                            necessary elements are processed.
+
+                            Java Streams are also designed to support parallel processing. By using the parallelStream
+                            method instead of the stream
+                            method, you can process the elements in a stream in parallel, taking advantage of multi-core
+                            processors to improve
+                            performance.
+
+                            In conclusion, Java Streams are a powerful and efficient way of processing collections of
+                            data in a functional style. By
+                            using Streams, you can write more expressive and maintainable code that takes advantage of
+                            modern hardware to improve
+                            performance.</div>
+                    </div>
+                </div>
+                <div class="main-article-line2">
+                    <div class="article">
+                        <div class="article-title">Multithreading in Java: Best Practices</div>
+                        <div class="article-content">Multithreading is a powerful feature of Java that allows developers
+                            to write concurrent and responsive applications.
+                            However, writing multithreaded code can be challenging, as it requires careful consideration
+                            of synchronization, race
+                            conditions, and deadlock.
+
+                            Here are some best practices for writing multithreaded code in Java:
+
+                            1. Use thread-safe data structures: When sharing data between threads, use thread-safe data
+                            structures like
+                            ConcurrentHashMap, CopyOnWriteArrayList, and BlockingQueue to prevent race conditions and
+                            ensure consistency.
+                            2. Synchronize access to shared resources: When accessing shared resources like variables or
+                            objects, use synchronized
+                            blocks or methods to prevent multiple threads from accessing the resource simultaneously.
+                            3. Avoid busy-waiting: Busy-waiting, where a thread repeatedly checks a condition in a loop,
+                            can waste CPU cycles and
+                            reduce performance. Use wait and notify methods to create efficient synchronization between
+                            threads.
+                            4. Use thread pools: Instead of creating a new thread for every task, use thread pools to
+                            manage a pool of reusable
+                            threads. This can improve performance by reducing the overhead of creating and destroying
+                            threads.
+                            5. Use high-level concurrency utilities: Java provides high-level concurrency utilities like
+                            ExecutorService,
+                            CompletableFuture, and Phaser that make it easier to write multithreaded code that is
+                            correct and efficient.
+                            6. Use volatile and atomic variables: When sharing variables between threads, use volatile
+                            or atomic variables to ensure
+                            visibility and atomicity. This can prevent race conditions and ensure that changes made by
+                            one thread are visible to all
+                            other threads.
+
+                            By following these best practices, you can write multithreaded code that is correct,
+                            efficient, and maintainable.
+                            Multithreading can improve the performance and responsiveness of your Java applications, but
+                            it requires careful
+                            consideration of synchronization and concurrency issues.</div>
+                    </div>
+                    <div class="article">
+                        <div class="article-title">Understanding Java Classloaders</div>
+                        <div class="article-content">
+                            Java classloaders are a crucial part of the Java runtime environment. They are responsible
+                            for loading the necessary
+                            classes and resources required for running a Java application. Understanding how
+                            classloaders work can help you debug
+                            classloading issues, write more efficient and secure code, and create custom classloaders.
+
+                            In Java, there are three types of classloaders: bootstrap, extension, and application
+                            classloaders. The bootstrap
+                            classloader loads core Java classes, while the extension classloader loads classes from the
+                            Java extension directories.
+                            The application classloader is responsible for loading classes from the application's
+                            classpath.
+
+                            Classloaders use a delegation model to find and load classes. When a class is requested, the
+                            classloader first delegates
+                            the task to its parent classloader. If the parent classloader cannot find the class, the
+                            classloader itself attempts to
+                            find and load the class.
+
+                            Understanding classloaders is essential for building modular applications with custom
+                            classloaders. Custom classloaders
+                            can help you isolate different parts of an application, reduce classpath conflicts, and
+                            improve security by preventing
+                            untrusted code from accessing sensitive resources.
+
+                            In conclusion, understanding classloaders is critical for Java developers. By mastering this
+                            topic, you can write more
+                            efficient, modular, and secure Java applications.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="divider"></div>
+            <div id="logos">
+                <!-- twitter github linkin -->
+                <div>
+                    <a href="https://twitter.com/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968823.png" class="logo" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="logo" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://linkedin.com/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="logo" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
