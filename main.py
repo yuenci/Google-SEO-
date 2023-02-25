@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from API.ReadArticles import get_articles
-from API.Index import Index
+from API.Index import Index, Query
 import uvicorn
 
 app = FastAPI()
@@ -29,8 +29,7 @@ async def makeIndex(item: dict):
 
 @app.get("/search")
 async def search(q: str):
-    print(q)
-    return {"result": "success"}
+    return Query(q).search()
 
 
 if __name__ == "__main__":

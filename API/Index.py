@@ -25,7 +25,7 @@ class Index:
 
     def saveIndexToJSON(self, logoUrl, website, url, title, description):
         data = {
-            logoUrl: logoUrl,
+            "logoUrl": logoUrl,
             "website": website,
             "url": url,
             "title": title,
@@ -37,3 +37,22 @@ class Index:
 
 
 # Index("http://127.0.0.1:5500/3.blog-static/index.html").makeIndex()
+
+class Query:
+    def __init__(self, keyword):
+        self.keyword = keyword.lower()
+
+    def search(self):
+        with open("Index/index.json", "r") as f:
+            data = json.load(f)
+        if(data["logoUrl"].lower().find(self.keyword) != -1):
+            return data
+        if(data["website"].lower().find(self.keyword) != -1):
+            return data
+        if(data["url"].lower().find(self.keyword) != -1):
+            return data
+        if(data["title"].lower().find(self.keyword) != -1):
+            return data
+        if(data["description"].lower().find(self.keyword) != -1):
+            return data
+        return {"result": "not found"}

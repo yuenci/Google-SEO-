@@ -24,7 +24,7 @@ function addInputEvent() {
     input.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
             event.preventDefault();
-            console.log("enter key pressed:", input.value);
+            //console.log("enter key pressed:", input.value);
         }
     });
 }
