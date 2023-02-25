@@ -25,7 +25,6 @@ Before you begin, make sure that you have met the following requirements:
 * You have installed python 3.8 / 3.9 / 3.10
 * You have a machine <Windows /Linux/Mac>. Indicate which operating system is compatible/not compatible.
 
-python
 
 ## 🚀 Installing
 
