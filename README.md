@@ -1,6 +1,6 @@
 # Google SEO And Web frameworks
 
-`<a name="readme-top"></a>`
+<a name="readme-top"></a>
 
 ![image](image/product-image.png)
 
