@@ -17,13 +17,18 @@ function addInputEvent() {
         } else {
             divider.classList.remove("divider-active");
             closeIcon.style.opacity = 0;
+            crawlBtn.style.opacity = 0;
         }
     });
 
     // enter key
     input.addEventListener("keyup", function (event) {
+
+        var loadingIcon = document.getElementById("loading-icon");
         if (event.key === "Enter") {
             event.preventDefault();
+
+            loadingIcon.style.opacity = 1;
             console.log("enter key pressed:", input.value);
         }
     });

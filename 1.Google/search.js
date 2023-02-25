@@ -1,5 +1,5 @@
 
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
     AddNewResult(
         "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
         "Google",
@@ -7,8 +7,7 @@ window.onload = function () {
         "Google",
         "Google is a search engine"
     )
-};
-
+});
 
 
 
