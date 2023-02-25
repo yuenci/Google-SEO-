@@ -32,9 +32,11 @@ python
 To install this project, follow these steps:
 
 1. Install requirements.txt
-   ```bash
-   pip install -r requirements.txt
-   ```
+
+```bash
+pip install -r requirements.txt
+```
+   
 2. Install pipenv
 
 ```bash
