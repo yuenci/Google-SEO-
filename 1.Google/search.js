@@ -26,7 +26,12 @@ function sendQuery(keyword) {
     fetch(`http://127.0.0.1:5000/search?q=${keyword}`)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            if (data.result === "not found") {
+                alert("Not found");
+                return;
+            }
+
+
             AddNewResult(
                 data.logoUrl,
                 data.website,
