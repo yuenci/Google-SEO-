@@ -6,6 +6,16 @@
 
 > A mini crawler system and CSR, SSR, SSG(Pre-Render)system to introduce the impact of different rendering patterns on SEO
 
+### Adjustments and improvements
+
+The project is still under development and the next updates will be focused on the following tasks:
+
+- [x] Blog SSG Version
+- [x] Blog CSR Version
+- [x] Blog SSR Version
+- [x] Search engine 
+- [x] crawler system
+
 ## 💡 Introduction
 
 #### Introducing the three stages of Google Search[^1]
